@@ -8,6 +8,7 @@ export default function handler(req, res) {
     name: 'emon',
   })
   User.save()
+  console.log(User)
 
   res.status(200).send(User.name)
 }
